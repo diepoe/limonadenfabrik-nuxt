@@ -147,7 +147,7 @@
         "
       >
         Überzeugen sie sich selbst und bestellen sie die leckere Fluffy Limonade
-        in unserem <a href="/shop" class="underline">Onlineshop</a>.
+        in unserem <NuxtLink to="/shop" class="underline">Onlineshop</NuxtLink>.
       </p>
     </section>
   </div>

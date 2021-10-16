@@ -110,8 +110,8 @@
             loading="lazy"
             class="rounded-t-md"
           />
-          <a
-            v-bind:href="item.url"
+          <NuxtLink
+            v-bind:to="item.url"
             rel="preload"
             class="
               pb-2
@@ -122,7 +122,7 @@
               dark:text-bluegray-200
               text-bluegray-800
             "
-            >{{ item.name }}</a
+            >{{ item.name }}</NuxtLink
           >
         </li>
       </ul>
