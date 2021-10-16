@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -20,7 +21,12 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "eslint-config-prettier": "^8.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md,vue}": "prettier --write"
   }
 }
