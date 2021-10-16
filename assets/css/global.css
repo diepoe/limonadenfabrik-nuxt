@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Sharpie VF';
+    src: url('~/assets/fonts/sharpie/variable/Sharpie-Variable.woff2')
+        format('woff2-variations'),
+      url('~/assets/fonts/sharpie/variable/Sharpie-Regular.woff')
+        format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sharpie';
+    src: url('~/assets/fonts/sharpie/static/Sharpie-Regular.woff2')
+      format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sharpie';
+    src: url('~/assets/fonts/sharpie/static/Sharpie-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Branch';
+    src: url('~/assets/fonts/Branch.otf');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Cyrene';
+    src: url('~/assets/fonts/Cyrene.otf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Kyiv Sans VF';
+    src: url('~/assets/fonts/kyiv/KyivTypeSans-VarGX.ttf');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Kyiv Sans';
+    src: url('~/assets/fonts/kyiv/static/KyivTypeSans-Regular.ttf');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Kyiv Sans';
+    src: url('~/assets/fonts/kyiv/static/KyivTypeSans-Bold.ttf');
+    font-weight: 700;
+    font-display: swap;
+  }
+}
+
+.is-editing {
+  color: #0f172a;
+}
+
+/* Ensure accessibility */
+img:not([alt]) {
+  filter: blur(10px);
+  outline: 10px solid;
+}
