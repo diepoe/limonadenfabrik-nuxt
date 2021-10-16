@@ -18,7 +18,7 @@
         <Nuxt />
       </main>
     </div>
-    <Foot />
+    <LazyFoot />
   </div>
 </template>
 

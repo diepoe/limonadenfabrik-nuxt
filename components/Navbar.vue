@@ -9,7 +9,15 @@
           <img src="/icon.png" width="720" height="720" alt="Limonade Icon" />
         </picture>
         <span
-          class="text-xl font-cyrene text-bluegray-900 dark:text-bluegray-200 md:text-2xl lg:text-3xl xl:text-4xl"
+          class="
+            text-xl
+            font-cyrene
+            text-bluegray-900
+            dark:text-bluegray-200
+            md:text-2xl
+            lg:text-3xl
+            xl:text-4xl
+          "
         >
           Fluffy Limonade
         </span>
@@ -17,10 +25,30 @@
     </NuxtLink>
     <!--Desktop Nav-->
     <ul
-      class="hidden grid-cols-4 col-span-2 lg:grid place-content-center place-items-end"
+      class="
+        hidden
+        grid-cols-4
+        col-span-2
+        lg:grid
+        place-content-center place-items-end
+      "
     >
       <li
-        class="grid p-2 rounded-md max-w-max place-items-center text-bluegray-600 dark:text-bluegray-300 text-md lg:text-lg hover:bg-blue-100 dark:hover:bg-bluegray-800 dark:hover:text-bluegray-200 2xl:text-xl font-kyivsans"
+        class="
+          grid
+          p-2
+          rounded-md
+          max-w-max
+          place-items-center
+          text-bluegray-600
+          dark:text-bluegray-300
+          text-md
+          lg:text-lg
+          hover:bg-blue-100
+          dark:hover:bg-bluegray-800 dark:hover:text-bluegray-200
+          2xl:text-xl
+          font-kyivsans
+        "
         v-for="item in items"
         :key="(item.name, item.url)"
       >
@@ -52,10 +80,26 @@
     </div>
     <div :class="{ hidden: !showMenu }">
       <div
-        class="absolute inset-x-0 top-0 z-40 p-2 transition origin-top-right transform lg:hidden"
+        class="
+          absolute
+          inset-x-0
+          top-0
+          z-40
+          p-2
+          transition
+          origin-top-right
+          transform
+          lg:hidden
+        "
       >
         <div
-          class="overflow-hidden rounded-lg shadow-md bg-blue-50 dark:bg-bluegray-800"
+          class="
+            overflow-hidden
+            rounded-lg
+            shadow-md
+            bg-blue-50
+            dark:bg-bluegray-800
+          "
         >
           <div class="px-3 pt-4">
             <div class="-mr-2">
@@ -63,7 +107,17 @@
                 type="button"
                 @click="toggleMenu(false)"
                 aria-label="Toggle mobile menu"
-                class="inline-flex items-center justify-center p-2 text-red-500 rounded-md dark:hover:bg-bluegray-700 hover:text-red-600 hover:bg-blue-100 focus:outline-none"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  p-2
+                  text-red-500
+                  rounded-md
+                  dark:hover:bg-bluegray-700
+                  hover:text-red-600 hover:bg-blue-100
+                  focus:outline-none
+                "
               >
                 <span class="sr-only">Close main menu</span>
                 <svg
@@ -93,7 +147,20 @@
               <NuxtLink
                 rel="prefetch"
                 v-bind:to="item.url"
-                class="block px-3 py-2 text-base font-medium leading-relaxed rounded-md font-kyivsans text-bluegray-700 dark:text-bluegray-300 md:text-lg hover:text-bluegray-900 hover:bg-blue-300"
+                class="
+                  block
+                  px-3
+                  py-2
+                  text-base
+                  font-medium
+                  leading-relaxed
+                  rounded-md
+                  font-kyivsans
+                  text-bluegray-700
+                  dark:text-bluegray-300
+                  md:text-lg
+                  hover:text-bluegray-900 hover:bg-blue-300
+                "
                 role="menuitem"
                 v-for="item in items"
                 :key="(item.name, item.url)"
@@ -121,9 +188,9 @@ export default {
     }
   },
   methods: {
-      toggleMenu(state) {
+    toggleMenu(state) {
       this.showMenu = state
-    }
-  }
+    },
+  },
 }
 </script>
