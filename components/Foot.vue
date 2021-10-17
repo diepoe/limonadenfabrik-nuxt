@@ -14,9 +14,21 @@
       xl:text-2xl
     "
   >
-    <section>&copy; 2021</section>
+    <section>&copy; {{ year }}</section>
     <section>
       <NuxtLink to="/impressum" class="flex underline">Impressum</NuxtLink>
     </section>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return { year: null }
+  },
+  beforeMount() {
+    const date = new Date()
+    this.year = date.getFullYear()
+  },
+}
+</script>
