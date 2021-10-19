@@ -215,8 +215,23 @@ export default {
         },
         {
           hid: 'og:image',
-          name: 'og:image',
+          property: 'og:image',
           content: 'https://limofabrik.vercel.app/images/og-image.png',
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: 'Fluffy Limonadenfabrikatur Homepage',
+        },
+        {
+          hid: 'og:image:width',
+          property: 'og:image:width',
+          content: '1390',
+        },
+        {
+          hid: 'og:image:height',
+          property: 'og:image:height',
+          content: '885',
         },
       ],
     }
