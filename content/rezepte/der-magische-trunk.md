@@ -1,6 +1,7 @@
 ---
 title: 'Der magische Trunk'
 description: 'Fluffy Rezept: Der magische Trunk'
+img: '/images/rezepte/der-magische-trunk.jpg'
 ---
 
 ## 🛒 Zutaten
