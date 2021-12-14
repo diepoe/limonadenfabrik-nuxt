@@ -77,6 +77,9 @@ module.exports = {
             h4: {
               color: '#F1F5F9',
             },
+            strong: {
+              color: '#F8FAFC',
+            },
           },
         },
       }),
